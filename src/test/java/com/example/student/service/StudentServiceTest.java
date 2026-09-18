@@ -48,7 +48,7 @@ void testGetStudentById() {
 
 // Arrange
 Student student =
-new Student(1L, "John", "Java");
+new Student(1L, "Samruddhi", "Java");
 
 when(studentRepository.findById(1L))
 .thenReturn(Optional.of(student));
@@ -62,7 +62,7 @@ assertNotNull(result);
 
 assertEquals(1L, result.getId());
 
-assertEquals("John", result.getName());
+assertEquals("Samruddhi", result.getName());
 
 assertEquals("Java", result.getCourse());
 
